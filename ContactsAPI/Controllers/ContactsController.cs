@@ -37,6 +37,7 @@ namespace ContactsAPI.Controllers
         }
 
         [HttpPost]
+        [Route("addContact")]
         public async Task<IActionResult> AddContact(AddContactRequest addContactRequest)
         {
             var contact = new Contact()
